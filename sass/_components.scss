@@ -60,9 +60,22 @@
 
 .user-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  align-self: stretch;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
   &__icon-box {
+    display: flex;
+    align-items: center;
   }
 
   &__icon {
