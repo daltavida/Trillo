@@ -109,6 +109,9 @@
 }
 
 .side-nav {
+  display: flex;
+  flex-direction: column;
+
   &__item {
   }
 
@@ -116,6 +119,8 @@
   }
 
   &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }
 
