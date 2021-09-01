@@ -385,12 +385,17 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 100px;
-  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary));
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
   color: white;
   position: relative;
-  overflow: hidden; }
-  .btn__visible {
+  overflow: hidden;
+  transition: all 0.2s; }
+  .btn > * {
     display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s; }
+  .btn__visible {
     padding: 2rem 7.5rem; }
   .btn__invisible {
     display: inline-block;
@@ -399,4 +404,14 @@ body {
     top: -100%;
     height: 100%;
     width: 100%;
-    padding: 2rem; }
+    padding: 2rem;
+    transition: all 0.2s; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
