@@ -25,6 +25,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -42,6 +45,11 @@ body {
   background-color: #fff;
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .header {
   height: 7rem;
@@ -389,7 +397,8 @@ body {
   color: white;
   position: relative;
   overflow: hidden;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  cursor: pointer; }
   .btn > * {
     display: inline-block;
     height: 100%;

@@ -374,6 +374,7 @@
   position: relative;
   overflow: hidden;
   transition: all 0.2s;
+  cursor: pointer;
 
   & > * {
     display: inline-block;
