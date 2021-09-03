@@ -82,6 +82,12 @@ body {
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
   font-size: 1.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   background-color: #fff;
@@ -89,6 +95,14 @@ body {
   margin-right: 4.5rem;
   box-shadow: var(--shadow-light);
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -127,6 +141,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -260,11 +276,21 @@ body {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem 0.5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        margin-right: 0;
+        margin-bottom: 0.7rem;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .legal {
   font-size: 1.2rem;
@@ -358,9 +384,13 @@ body {
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .review__text {
     margin-bottom: 2rem;
     z-index: 2;
@@ -401,6 +431,9 @@ body {
 .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem 0; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
